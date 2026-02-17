@@ -1,0 +1,25 @@
+target: example.com
+platform: hackerone   # Tag all findings with this
+scope: .*\.example\.com.*   # Optional regex to filter URLs
+tools_path: /usr/local/bin
+proxy:
+  use_free: true
+  max_proxies: 50
+  test_url: http://httpbin.org/ip
+  refill_interval: 300
+concurrency: 10
+update_on_start: true
+ml_enabled: true
+anomaly:
+  enabled: true
+  length_threshold: 0.2
+  keyword_patterns:
+    - "email"
+    - "private"
+    - "admin"
+notifications:
+  telegram_token: "YOUR_TELEGRAM_BOT_TOKEN"
+  telegram_chat_id: "YOUR_CHAT_ID"
+  slack_webhook: "https://hooks.slack.com/services/..."
+  generic_webhook: "https://your.webhook.url"
+payloads_update_interval: 7
