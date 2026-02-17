@@ -1,0 +1,14 @@
+aiohttp
+asyncio
+requests
+beautifulsoup4
+rich
+pyyaml
+sqlalchemy
+aiofiles
+python-dateutil
+python-telegram-bot
+slack-sdk
+googlesearch-python
+fake-useragent
+pytest-asyncio
