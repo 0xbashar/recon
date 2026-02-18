@@ -3,8 +3,8 @@ import asyncio
 
 class NotificationManager:
     def __init__(self, config):
-        self.telegram_token = config.get('8338448549:AAEYMBudzrRWWpujnwjUyonnSI-Fzv-yiXc')
-        self.telegram_chat_id = config.get('1833446395')
+        self.telegram_token = config.get('your token')
+        self.telegram_chat_id = config.get('your id')
         self.slack_webhook = config.get('slack_webhook')
         self.generic_webhook = config.get('generic_webhook')
 
